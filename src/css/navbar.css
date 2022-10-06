@@ -1,0 +1,72 @@
+.navbar {
+  z-index: 1;
+  position: fixed;
+  top: 0;
+  width: 96%;
+  padding: 20px 50px;
+  height: 30px;
+  font-weight: 700;
+  transition-timing-function: ease-in;
+  transition: all 0.5s;
+}
+.navbar_black {
+  background-color: #111;
+}
+.navbar_logo {
+  width: 80px;
+  object-fit: contain;
+  margin-right: 40px;
+}
+.navbar_avatar {
+  width: 30px;
+  border-radius: 5px;
+  object-fit: cover;
+  cursor: pointer;
+}
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.container_left {
+  display: flex;
+  align-items: center;
+}
+.container_left span {
+  margin-right: 40px;
+}
+.container_right {
+  display: flex;
+  align-items: center;
+}
+.container_right .icon {
+  margin: 0px 25px 0px 25px;
+  cursor: pointer;
+  color: white;
+}
+.container_right .icon_down {
+  cursor: pointer;
+  color: white;
+  margin-left: 10px;
+  margin-right: 25px;
+}
+.container_right .profile .options {
+  display: none;
+  background-color: #111;
+  border-radius: 5px;
+  top: 60px;
+  right: 50px;
+}
+.container_right .profile span {
+  padding: 10px;
+  cursor: pointer;
+}
+.container_right .profile:hover .options {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+}
+.container span {
+  color: white;
+  font-size: 16px;
+}

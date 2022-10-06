@@ -3,12 +3,29 @@ import "./css/app.css";
 
 import Row from "./Components/Row";
 import Banner from "./Components/Banner";
+import Navbar from "./Components/Navbar";
 import requests from "./requests";
+
+// <Router>
+//   <div>
+//     <nav>
+//       <ul>
+//         <li>
+//           <Link to="/">Home</Link>
+//         </li>
+//         <li>
+//           <Link to="/about">About</Link>
+//         </li>
+//         <li>
+//           <Link to="/users">Users</Link>
+//         </li>
+//       </ul>
+//     </nav>
 
 export default function App() {
   return (
     <div className="app">
-      {/* Navbar */}
+      <Navbar />
       <Banner />
       <Row
         title="NETFLIX ORIGINALS"

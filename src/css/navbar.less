@@ -1,0 +1,99 @@
+.navbar {
+  z-index: 1;
+  position: fixed;
+  top: 0;
+  width: 96%;
+  padding: 20px 50px;
+  height: 30px;
+  font-weight: 700;
+
+  // display: flex;
+  // justify-content: space-between;
+
+  transition-timing-function: ease-in;
+  transition: all 0.5s;
+
+  &_black {
+    background-color: #111;
+  }
+
+  &_logo {
+    // position: fixed;
+    // left: 20px;
+    width: 80px;
+    object-fit: contain;
+    margin-right: 40px;
+  }
+
+  &_avatar {
+    // position: fixed;
+    // right: 10px;
+    width: 30px;
+    // object-fit: contain;
+    border-radius: 5px;
+    object-fit: cover;
+    cursor: pointer;
+  }
+}
+
+.container {
+  // padding: 0px 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  &_left {
+    display: flex;
+    align-items: center;
+
+    span {
+      margin-right: 40px;
+    }
+  }
+
+  &_right {
+    display: flex;
+    align-items: center;
+
+    .icon {
+      margin: 0px 25px 0px 25px;
+      cursor: pointer;
+      color: white;
+    }
+
+    .icon_down {
+      cursor: pointer;
+      color: white;
+      margin-left: 10px;
+      margin-right: 25px;
+    }
+
+    .profile {
+      .options {
+        display: none;
+        background-color: #111;
+        border-radius: 5px;
+        top: 60px;
+        right: 50px;
+      }
+
+      span {
+        padding: 10px;
+        cursor: pointer;
+      }
+
+      &:hover {
+        .options {
+          display: flex;
+          flex-direction: column;
+          position: absolute;
+        }
+      }
+    }
+  }
+
+  span {
+    color: white;
+    font-size: 16px;
+  }
+}
