@@ -2,6 +2,9 @@ import React, { useState, useEffect } from "react";
 import axios from "../axios";
 import requests from "../requests";
 
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faPlay, faCircleInfo } from "@fortawesome/free-solid-svg-icons";
+
 import "../css/banner.css";
 
 function Banner() {
@@ -43,12 +46,18 @@ function Banner() {
           {movie?.title || movie?.name || movie?.original_name}
           {/* if there is no movie tittle search movie name, if there is no movie name search for original name */}
         </h1>
+        <h1 className="banner_description">{truncate(movie?.overview, 150)}</h1>
         <div className="banner_buttons">
           {/* button.banner_buttons and then enter, it will give that */}
-          <button className="banner_button">Play</button>
-          <button className="banner_button">My list</button>
+          <button className="banner_button play">
+            <FontAwesomeIcon icon={faPlay} />
+            <span>Play</span>
+          </button>
+          <button className="banner_button info">
+            <FontAwesomeIcon icon={faCircleInfo} />
+            <span>Info</span>
+          </button>
         </div>
-        <h1 className="banner_description">{truncate(movie?.overview, 150)}</h1>
       </div>
 
       <div className="banner_fadeBottom"></div>
